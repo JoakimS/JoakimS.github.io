@@ -28,3 +28,12 @@ document.querySelectorAll('.project-card').forEach(card => {
         card.classList.remove('hovered');
     });
 });
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('.references-section');
+  const sectionTop = section.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (sectionTop < windowHeight - 100) {
+    section.classList.add('visible');
+  }
+});
