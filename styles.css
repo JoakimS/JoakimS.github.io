@@ -266,10 +266,10 @@ span {
   align-self: flex-start;
 }
 .timeline-dot {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   background-color: rgb(0, 238, 255);
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
