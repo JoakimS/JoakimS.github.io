@@ -436,3 +436,74 @@ p {
 .footer p {
   margin: 0;
 }
+
+
+
+.references-section {
+  padding: 60px 20px;
+  background: #75a7f1;
+  text-align: center;
+}
+
+.references-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.reference-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.reference-card {
+  background: rgb(135, 237, 245);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.reference-card:hover {
+  transform: translateY(-10px);
+}
+
+.reference-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.reference-card h3 {
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.reference-card .role {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.reference-card blockquote {
+  font-style: italic;
+  font-size: larger;
+  color: #3b3b3b;
+  line-height: 1.4;
+}
+
+.references-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.references-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
