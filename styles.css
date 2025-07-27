@@ -221,8 +221,21 @@ span {
   color: #fdfdfd;
 }
 .experience {
+  position: relative;
   padding: 100px 15px;
   background: #0f1722;
+  overflow: hidden;
+  z-index: 1;
+}
+#binaryBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.1; /* Adjust for subtlety */
 }
 .experience h1 {
   text-align: center;
